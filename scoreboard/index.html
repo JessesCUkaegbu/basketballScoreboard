@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3 class="gameSite">HOME</h3>
+
+            <div class="borard">
+                <p class="score" id="score"></p>
+            </div>
+
+            <div class="addScore">
+                <button  onclick="addMe()">+1</button>
+                <button  onclick="addTwo()">+2</button>
+                <button onclick="addThree()">+3</button>
+            </div>
+        </div>
+        <div>
+            <h3 class="gameSite">GUEST</h3>
+
+            <div class="borard">
+                <p class="score" id="score2"></p>
+            </div>
+            <div class="addScore">
+                <button onclick="One()">+1</button>
+                <button onclick="Two()">+2</button>
+                <button onclick="Three()">+3</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let point = document.getElementById("score")
+
+        let point2 = document.getElementById("score2")  
+
+        function addMe() {
+            let one = 0
+            one = one + 1
+            point.textContent = one
+        }
+
+        function addTwo() {
+            let two = 0
+            two = two + 2
+            point.textContent = two
+        }
+
+        function addThree() {
+            let three = 0
+            three = three + 3
+            point.textContent = three
+        }
+
+
+        function One() {
+            let one = 0
+            one = one + 1
+            point2.textContent = one
+        }
+
+        function Two() {
+            let two = 0
+            two = two + 2
+            point2.textContent = two
+        }
+
+        function Three() {
+            let three = 0
+            three = three + 3
+            point2.textContent = three
+        }
+    </script>
+</body>
+</html>
